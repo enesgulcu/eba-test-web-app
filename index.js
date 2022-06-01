@@ -6,10 +6,10 @@ for(let i = 1; i<=testSayisi; i++){
 
     // aşağıda img elementini ürettik ve parent' altına ekledik
     const img = document.createElement('img');
-    img.setAttribute('src',`images/test-number/${i}.png`); // test-number created
+    img.setAttribute('src',`./images/test-number/${i}.png`); // test-number created
 
     const a = document.createElement('a');
-    a.setAttribute('href',`testler/test-${i}/index.html`);
+    a.setAttribute('href',`./testler/test-${i}/index.html`);
     imageParent.appendChild(a);
     a.appendChild(img);
 }
