@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="noSelectable">
+    <main id="root" class="main">
+        <div class="container">
+            <div class="test-top-bar">
+                    <a class="backward-button-container" style="display: none;">
+                        <img src="/images/buttons/arrow-01.png" alt="">
+                    </a>
+                    <a class="back-button-container" href="../index.html">
+                        <img src="/images/buttons/arrow-02.png" alt="">
+                    </a>
+                    <a class="forward-button-container">
+                        <img src="/images/buttons/arrow-03.png" alt="">
+                    </a>
+            </div>
+            <div style="position: relative;">
+                <img id="question" src="images/1.png" alt="">
+                <div class="showAnswerContainer">
+                    <img id="showAnswerImg" src="/images/buttons/showAnswer.png" alt="">
+                </div>
+            </div>
+            <div class="select-answer">
+                <button id="answer_A" value="A">A</button>
+                <button id="answer_B" value="B">B</button>
+                <button id="answer_C" value="C">C</button>
+                <button id="answer_D" value="D">D</button>
+            </div>     
+        </div>        
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

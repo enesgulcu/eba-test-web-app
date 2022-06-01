@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+body{
+    padding: 3rem 1rem;
+
+    background-image: url("../../images/arkaplan/arkaplan.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100%;
+    min-height: 100vh;
+
+}
+.main{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container{ 
+ display: flex;
+ justify-content:center;
+ flex-direction: column;
+ max-height: 100%;
+ width: auto;
+ position: relative;
+ border: 0.2rem solid rgb(255, 101, 101);
+ border-radius: 3rem;
+background-color: rgb(185, 221, 255);
+}
+
+.container img{
+    border-radius: 2.5rem;
+    max-width: 100%;
+    max-height: 100vh;
+}
+
+.test-top-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.start-button-container, .back-button-container{
+    margin-top: 0.3rem;
+    width: 12rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.start-button-container:hover, .back-button-container:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+@media (max-width: 3000px) {
+    *{
+        font-size: 20px;   
+    }  
+
+}
+
+@media (max-width: 1024px) {
+    *{
+        font-size: 18px;   
+    }  
+
+}
+
+@media (max-width: 1201px) {
+    *{
+        font-size: 16px;   
+    }  
+
+}
+
+@media (max-width: 768px) {
+    *{
+        font-size: 14px;   
+    }  
+
+}
+
+@media (max-width: 480px) {
+    *{
+        font-size: 10px;   
+    }     
+
+}
+
+@media (max-width: 300px) {
+    *{
+        font-size: 8px;   
+    }     
+
+}
+
+
+
+
+
+
+
+
+
+
+
