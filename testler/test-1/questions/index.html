@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body class="noSelectable">
     <main id="root" class="main">
@@ -21,7 +24,29 @@
                         <img src="../../../images/buttons/arrow-03.png" alt="">
                     </a>
             </div>
-            <div style="position: relative;">
+            <div class="info" style="display:none; justify-content: center; flex-direction: column; align-items: center; ">
+                <div style="display:flex; justify-content: center; align-items: center; gap: 1rem;">
+                    <div style="display:flex; justify-content: center; align-items: center; ">
+                        <div class="circleGreen"></div>
+                        <h5 style="display:inline-block; font-size: 0.7rem;">Student Answer</h5>
+                    </div>
+                    <div style="display:flex; justify-content: center; align-items: center; ">
+                        <div class="circleBlack"></div>
+                        <h5 style="display:inline-block; font-size: 0.7rem;">Correct Answer</h5>
+                    </div>
+                </div>
+                <div style="max-width: fit-content; display:flex; padding: 0.5rem; gap: 0.5rem; justify-content: center ;">
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 0.3rem; padding:0.5rem; background-color: #00d000; display: flex; border-radius: 3em; color: white; border: 0.1rem solid rgb(74, 74, 74); white-space: nowrap;">
+                        <img style="width: 1rem; height: 1rem; color:white; border-radius: 0px;" src="../../../images/buttons/check.png" alt="check"><h5 style="font-size: 0.8rem;" class="info_correct">Correct: </h5></div>
+
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 0.3rem; padding:0.5rem; background-color: red; display: flex; border-radius: 3em; color: white; border: 0.1rem solid rgb(74, 74, 74); white-space: nowrap;">
+                        <img style="width: 0.7rem; height: 0.7rem; color:white; border-radius: 0px;"  src="../../../images/buttons/close.png" alt="wrong"><h5 style="font-size: 0.8rem;" class="info_wrong">Wrong: </h5></div>
+
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 0.3rem; padding:0.5rem; background-color: orange; display: flex;   border-radius: 3em; color: white;  border: 0.1rem solid rgb(74, 74, 74); white-space: nowrap;">
+                        <img style="width: 1rem; color:white; border-radius: 0px;" src="../../../images/buttons/minus.png" alt="blank"><h5 style="font-size: 0.8rem;" class="info_blank">Blank: </h5></div>
+                </div>
+            </div>
+            <div id="question-container" style="position: relative;">
                 <img id="question" src="./images/1.png" alt="">
                 <div class="showAnswerContainer">
                     <img id="showAnswerImg" src="../../../images/buttons/showAnswer.png" alt="">
@@ -32,6 +57,12 @@
                 <button id="answer_B" value="B">B</button>
                 <button id="answer_C" value="C">C</button>
                 <button id="answer_D" value="D">D</button>
+            </div>
+            <div class="checkAnswer" style="display:none;">
+                <img class="check-answer-button" src="../../../images/buttons/check-answer.png" alt="">
+                </div>
+                <div class="answerContainer">
+                </div>
             </div>     
         </div>        
     </main>

@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-size: 10px;
     text-decoration: none;
+    font-family: 'Rubik', sans-serif;
 }
 
 body{
@@ -62,6 +63,23 @@ background-color: rgb(215, 236, 255);
     transition: all 0.2s ease-in-out;
 }
 
+.circleGreen {
+    padding: 0.5rem;
+    background-color: rgb(30, 30, 30);
+    border-radius: 50%;
+    margin: 0.2rem;
+    display: inline-block;
+}
+
+.circleBlack {
+    padding: 0.5rem;
+    border: 2px solid rgb(74, 74, 74);
+    background-color: #00FF00;
+    border-radius: 50%;
+    margin: 0.2rem;
+    display: inline-block;
+}
+
 
 .select-answer{
     display: flex;
@@ -77,9 +95,9 @@ background-color: rgb(215, 236, 255);
 }
 
 .correctOption{
-    background-color: rgb(0, 160, 0);
+    background-color: #02b400;
     color: white !important;
-    border: 2px solid rgb(158, 255, 147) !important;
+    border: 2px solid #027b00 !important;
 
 }
 
@@ -87,12 +105,13 @@ background-color: rgb(215, 236, 255);
     font-weight: bold;
     color: rgb(54, 54, 54);
     transform: scale(1.2);
-    width: 2.3rem;
+    width: 2.4rem;
     padding: 0.5rem;
     border: 0.1rem solid gray;
     border-radius: 50%;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+    font-weight: 500;
 }
 
 .select-answer button:hover{
@@ -130,8 +149,90 @@ background-color: rgb(215, 236, 255);
 .showAnswerContainer img{
     width: 2rem;
 }
+.checkAnswer{
+    min-width: 20rem;
+    min-height: 11rem;
+}
 
+.check-answer-button{
+    height: 10rem;
+    transition: all 0.2s ease-in-out;
 
+}
+
+.check-answer-button:hover{
+    height: 10rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.answerContainer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+    border-top: 0.2rem solid white;
+}
+
+.button_container button{
+    padding: 0.8rem;
+    width: 3rem;
+    margin: 0.4rem;
+    border-radius: 50%;
+    border: 2px solid rgb(81, 81, 81);
+}
+
+.selectByStudent{
+    background-color: black;
+    color: white;
+    font-weight: 500;
+}
+
+.answer-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showAnswerButtonClass{
+    border: 2px solid rgb(81, 81, 81);
+    white-space: nowrap;
+    color: rgb(81,81,81);
+    cursor: pointer;
+    margin: 0rem 0.5rem;
+    padding: 0.9rem 0.4rem;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    font-weight: 400;
+}
+
+.resultAnswerImgNone{
+    display: none;
+    margin: 0.3rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.resultAnswerImgShow{
+    display: block;
+    margin: 0.3rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
 
 
 .noSelectable {
