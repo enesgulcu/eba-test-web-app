@@ -1,4 +1,4 @@
-let testSayisi = 5;
+let testSayisi = 10;
 
 for(let i = 1; i<=testSayisi; i++){
     //parent elementi çağırdık
